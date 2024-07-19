@@ -1,11 +1,15 @@
 ---
+
 - hosts: localhost
   connection: local
   become: true
 
+  vars:
+    system_packages:
+     - tmux
+     - htop
+
   tasks:
-    - name: Install tmux
+    - name: Install system packages
       package:
-        name:
-          - tmux
-          - htop
+        name: "{{ system_packages }}"
