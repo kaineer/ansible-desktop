@@ -6,8 +6,29 @@
 
   vars:
     system_packages:
-     - tmux
+     - baobab
+     - curl
+     - cmake
+     - direnv
+     - dmenu
+     - gpg
      - htop
+     - inxi
+     - make
+     - moc
+     - neofetch
+     - p7zip
+     - p7zip-full
+     - rofi
+     - tmux
+     - unrar
+     - unzip
+     - webp
+     - wget
+     - xdotool
+     - xsel
+     - zathura
+     - zip
 
   tasks:
     - name: Install system packages
