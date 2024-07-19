@@ -2,3 +2,9 @@
 - hosts: localhost
   connection: local
   become: true
+
+  tasks:
+    - name: Install tmux
+      package:
+        name:
+          - tmux
