@@ -21,7 +21,6 @@
      - p7zip-full
      - rofi
      - tmux
-     - unrar
      - unzip
      - webp
      - wget
