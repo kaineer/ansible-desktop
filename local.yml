@@ -4,32 +4,8 @@
   connection: local
   become: true
 
-  vars:
-    system_packages:
-     - baobab
-     - curl
-     - cmake
-     - direnv
-     - dmenu
-     - gpg
-     - htop
-     - inxi
-     - make
-     - moc
-     - neofetch
-     - p7zip
-     - p7zip-full
-     - rofi
-     - tmux
-     - unzip
-     - webp
-     - wget
-     - xdotool
-     - xsel
-     - zathura
-     - zip
-
   tasks:
+    - include_vars: debian.yml
     - name: Install system packages
       package:
         name: "{{ system_packages }}"
