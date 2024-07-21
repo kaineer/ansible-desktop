@@ -4,4 +4,3 @@
 ## TODO
  * Добавить использование роли для установки неовим
  * https://github.com/gikeymarcia/ansible-role-neovim
- * Попробовать использовать include\_vars

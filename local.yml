@@ -5,7 +5,4 @@
   become: true
 
   tasks:
-    - include_vars: debian.yml
-    - name: Install system packages
-      package:
-        name: "{{ system_packages }}"
+    - include_tasks: ./tasks/debian.yml

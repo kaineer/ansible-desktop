@@ -1,0 +1,5 @@
+---
+- include_vars: ../vars/debian.yml
+- name: Install system packages
+  package:
+    name: "{{ system_packages }}"
